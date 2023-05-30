@@ -1,0 +1,22 @@
+﻿<Window x:Class="Pairs.CustomWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pairs"
+        mc:Ignorable="d"
+        Title="Custom" Height="150" Width="350">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <TextBlock>Number of rows:</TextBlock>
+                <TextBox x:Name="rowsBox" Width="313" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock>Number of columns:</TextBlock>
+                <TextBox x:Name="columnsBox" Width="313" HorizontalAlignment="Left"></TextBox>
+            </StackPanel>
+            <Button Width="50" Click="Button_Click">Submit</Button>
+        </StackPanel>
+    </Grid>
+</Window>

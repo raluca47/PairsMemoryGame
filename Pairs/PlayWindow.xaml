@@ -1,0 +1,41 @@
+﻿<Window x:Class="Pairs.PlayWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pairs"
+        mc:Ignorable="d"
+        Title="Pairs Game" Height="1080" Width="1920">
+    <Grid Margin="10">
+        <Border Background="Gray" BorderBrush="Black" BorderThickness="1" Margin="0,-8,-0.4,8.4"/>
+        <StackPanel>
+            <ToolBar>
+                <Menu>
+                    <MenuItem x:Name="fileMenuItem" Header="File">
+                        <MenuItem x:Name="newGame" Header="New Game" Click="NewGameButton"></MenuItem>
+                        <MenuItem x:Name="openGame" Header="Open Game" Click="OpenGameButton"></MenuItem>
+                        <MenuItem x:Name="saveGame" Header="Save Game" Click="SaveGameButton"></MenuItem>
+                        <MenuItem x:Name="statistics" Header="Statistics" Click="StatisticsButton"></MenuItem>
+                        <MenuItem x:Name="exit" Header="Exit" Click="Exit_Click"></MenuItem>
+                    </MenuItem>
+                    <MenuItem x:Name="options" Header="Options">
+                        <MenuItem Header="Standard" x:Name="StandardMenuItem" Click="OnStandardCheck"></MenuItem>
+                        <MenuItem Header="Custom" x:Name="CustomMenuItem" Click="OnCustomCheck"></MenuItem>
+                    </MenuItem>
+                    <MenuItem x:Name="help" Header="Help">
+                        <MenuItem x:Name="about" Header="About" Click="About_Click"></MenuItem>
+                    </MenuItem>
+                </Menu>
+            </ToolBar>
+        </StackPanel>
+        <Grid x:Name="anotherGrid" Margin="10,45,0,0">
+            <TextBlock x:Name="levelTextBlock" FontSize="40" TextBlock.Foreground="White"  FontWeight="Bold" Margin="41,143,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Width="261"/>
+            <TextBlock x:Name="usernameTextBlock" FontSize="50" TextBlock.Foreground="Red" FontWeight="Bold" VerticalAlignment="Top" HorizontalAlignment="Left" Text="" Margin="78,19,0,0" Height="80" RenderTransformOrigin="0.5,0.5" Width="224"/>
+            <Image x:Name="usernameImage" Margin="1323,0,281.6,847.4"/>
+            <TextBlock x:Name="timerTextBlock" Text="Don't take too long..." FontSize="60" FontWeight="Bold" Background="Red" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="327,19,0,0" Height="80" Width="858" RenderTransformOrigin="-0.153,0.458"/>
+            <TextBlock x:Name="seconds" Text="" FontSize="60" FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="995,14,0,0" Width="182"/>
+            <Grid x:Name="myGrid" Margin="338,143,-366.4,-499.6" Visibility="Visible"/>
+            <Border BorderThickness="3" BorderBrush="Black"></Border>
+        </Grid>
+    </Grid>
+</Window>

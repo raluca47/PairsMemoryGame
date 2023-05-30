@@ -1,0 +1,19 @@
+﻿<Window x:Class="Pairs.NewUser"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pairs"
+        mc:Ignorable="d"
+        Title="New User" Height="450" Width="800">
+    <Grid Margin="10">
+        <Border Background="GhostWhite" BorderBrush="Silver" BorderThickness="1"/>
+        <TextBlock FontWeight="Bold" FontSize="20" Margin="50,75,0,0">🍬Username:</TextBlock>
+        <TextBox x:Name="usernameBox" Margin="187,75,260.6,288"></TextBox>
+        <TextBlock FontWeight="Bold" FontSize="20" Margin="50,179,-4,0" Text="🍬Avatar:"/>
+        <Image x:Name="avatarImage" Margin="171,158,382,83"></Image>
+        <Button FontSize="30" Margin="171,348,534,10" Click="Button_Click_1">⇠</Button>
+        <Button FontSize="30" Margin="367,348,337.6,10" Click="Button_Click_2">⇢</Button>
+        <Button FontSize="20" Margin="656,348,24.6,10" Click="Button_Click">Ok</Button>
+    </Grid>
+</Window>

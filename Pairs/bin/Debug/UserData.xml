@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Players>
+  <Player>
+    <username>Raluca</username>
+    <imageIndex>7</imageIndex>
+    <playedGames>3</playedGames>
+    <wonGames>0</wonGames>
+  </Player>
+  <Player>
+    <username>Marius</username>
+    <imageIndex>0</imageIndex>
+    <playedGames>1</playedGames>
+    <wonGames>0</wonGames>
+  </Player>
+  <Player>
+    <username>Nala</username>
+    <imageIndex>1</imageIndex>
+    <playedGames>1</playedGames>
+    <wonGames>0</wonGames>
+  </Player>
+  <Player>
+    <username>Ziggy</username>
+    <imageIndex>2</imageIndex>
+    <playedGames>7</playedGames>
+    <wonGames>1</wonGames>
+  </Player>
+  <Player>
+    <username>ana</username>
+    <imageIndex>4</imageIndex>
+    <playedGames>3</playedGames>
+    <wonGames>0</wonGames>
+  </Player>
+</Players>
